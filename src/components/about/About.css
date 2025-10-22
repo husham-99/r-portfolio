@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* .skill{
+    width: fit-content;
+    overflow: hidden;
+} */
+.skill .top-section{
+    margin: 0 auto;
+    width: 300px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.skill .top-section h2{
+    color: var(--color-primary);
+    margin-top: 15px;
+    font-size: 40px;
+}
+
+.container-skill{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    
+    
+}
+
+.container-skill .card-skill{
+    
+    width: 24%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid var(--color-bg-veriant);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    
+}
+.container-skill .card-skill .icon{
+    width: 65px;
+    height: 65px;
+    padding: 7px;
+    border-radius: 10px;
+    background-color: var(--color-bg-veriant);
+}
+.container-skill .card-skill .content h4{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.container-skill .card-skill .content p{
+    font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+    .container-skill .card-skill{
+        width: 48%
+    }
+}
+@media (max-width: 600px) {
+    .container-skill .card-skill{
+        width: 49%
+    }
+
+    .container-skill .card-skill .icon{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    
+    }
+
+    .container-skill .card-skill .content h4{
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+    .container-skill .card-skill .content p{
+    font-size: 10px;
+    }
+
+    .skill .top-section h2{
+    
+    margin-top: 0;
+    font-size: 25px;
+    }
+    .skill .top-section h4{
+       
+    font-size: 14px;
+    }
+}
