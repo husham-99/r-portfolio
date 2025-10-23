@@ -6,8 +6,8 @@ import { RiContactsFill } from "react-icons/ri";
 import { GrProjects } from "react-icons/gr";
 import { BsGooglePlay } from "react-icons/bs";
 import { FaServicestack } from "react-icons/fa6";
-import Home from "../home/Home";
-import {NavLink} from 'react-router-dom'
+
+
 
 
 export default function Nav() {
@@ -17,7 +17,7 @@ export default function Nav() {
         <>
         <header className="header">
             <div className="container">
-                <a href="" className="logo" >Portfolio</a>
+                <a href="#home" className="logo" >Portfolio</a>
                 <MdMenu id="menu-icon" onClick={()=> setShow(!show)}/>
                 
                 <nav className={show?"navbar":"navbar2"}>
