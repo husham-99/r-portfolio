@@ -6,6 +6,7 @@ import { RiContactsFill } from "react-icons/ri";
 import { GrProjects } from "react-icons/gr";
 import { BsGooglePlay } from "react-icons/bs";
 import { FaServicestack } from "react-icons/fa6";
+import Darkmode from "../darkmode/Darkmode";
 
 
 
@@ -18,7 +19,9 @@ export default function Nav() {
         <header className="header">
             <div className="container">
                 <a href="#home" className="logo" >Portfolio</a>
-                <MdMenu id="menu-icon" onClick={()=> setShow(!show)}/>
+                <Darkmode/>
+                <button onClick={()=> setShow(!show)} style={{background:"transparent",color:"#fff"}}><MdMenu id="menu-icon" /></button>
+                
                 
                 <nav className={show?"navbar":"navbar2"}>
                     

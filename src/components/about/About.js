@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './About.css'
 import css from '../../assets/css3.svg'
 import express from '../../assets/expressjs.svg'
@@ -13,6 +13,12 @@ import axios from '../../assets/axios.png'
 import nextjs from '../../assets/nextjs.jpg'
 import html from '../../assets/html.png'
 import material from '../../assets/material.png'
+import api from '../../assets/api.png'
+import github from '../../assets/github.svg'
+import git from '../../assets/git.svg'
+import typescript from '../../assets/typescript.png'
+import postman from '../../assets/postman.png'
+import 'animate.css/animate.min.css'
 
 const skillsData = [
     {
@@ -77,18 +83,48 @@ const skillsData = [
     },
     {
         id: 11,
-        img: nodejs,
-        title: "NodeJs",
-        desc: "Web Server"
+        img: typescript,
+        title: "Typescript",
+        desc: "Framework"
     },
     {
         id: 12,
+        img: github,
+        title: "GitHub",
+        desc: "Version Controller"
+    },
+    {
+        id: 13,
+        img: git,
+        title: "Git",
+        desc: "Version Controller"
+    },
+    {
+        id: 14,
+        img: postman,
+        title: "Postman",
+        desc: "Api Testing"
+    },
+    {
+        id: 15,
+        img: api,
+        title: "API",
+        desc: "HTTP Requests"
+    },
+    {
+        id: 16,
+        img: nodejs,
+        title: "NodeJS",
+        desc: "Web Server"
+    },
+    {
+        id: 17,
         img: express,
         title: "ExpressJs",
         desc: "Framework"
     },
     {
-        id: 13,
+        id: 18,
         img: mongodb,
         title: "Mongodb",
         desc: "Data-Base"
@@ -96,6 +132,7 @@ const skillsData = [
 ]
 export default function About() {
     
+    const [animation,SetAnimation] = useState('animate__fadeInUp animate__slow')
     return (
         <section className='skill' id='skill'>
             <div className='top-section'>
@@ -105,7 +142,7 @@ export default function About() {
 
             <div className='container container-skill'>
                 {skillsData.map(({ id, img, title, desc }) => (
-                    <article key={id} className='card-skill'>
+                    <article  key={id} className={ `card-skill animate__animated ${animation}`}> 
                         <div className='icon'>
                             <img src={img} alt='pic' />
                         </div>

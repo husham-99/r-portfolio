@@ -1,0 +1,103 @@
+
+.dark-mode{
+    
+        background-color: rgba(0, 0, 0, 0.925) !important;
+        color: #fff !important
+
+}
+
+.dark-mode{
+    .project .portfolio-item{
+
+        background-color: transparent !important;
+        border:2px solid var(--color-bg-veriant) !important;
+        backdrop-filter: blur(10px) !important;
+    }
+}
+
+.dark-mode{
+    button{
+        background-color: rgba(0, 0, 0, 0.247) !important;
+        color: #fff !important
+    }
+}
+
+.dark-mode{
+    .btn{
+        background-color: transparent !important;
+        color: #fff !important
+    }
+}
+.dark-mode{
+    .icon{
+        
+        color: #fff !important
+    }
+}
+
+.dark-mode{
+    h1,h2,h3,h4,h5,h6{
+        
+        color: #fff !important
+    }
+}
+.dark-mode{
+    footer{
+        
+        background-color: rgba(0, 0, 0, 0.247) !important;
+    }
+}
+.dark-mode{
+    .contact a{
+        
+        background-color: rgba(0, 0, 0, 0.247) !important;
+    }
+}
+
+.dark-mode{
+
+    .dark-button{
+        background-color: transparent !important;
+    }
+}
+
+.dark-mode{
+
+    .card-skill .icon{
+        background-color: rgba(0, 0, 0, 0.247) !important;
+    }
+}
+
+
+
+
+.dark-button{
+    padding: 3px 4px;
+    background-color: transparent;
+    position: absolute;
+    top: 14px;
+    right: 80px;
+    display: none;
+    border: none;
+}
+
+.icon{
+    font-size: 20px;
+    color:#fff
+}
+
+@media (max-width: 800px) {
+    .dark-button{
+        display: block;
+        right: 120px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .dark-button{
+        display: block;
+        right: 80px;
+    }
+}
+
