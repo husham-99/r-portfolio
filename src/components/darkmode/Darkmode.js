@@ -3,24 +3,23 @@ import './Darkmode.css'
 import { MdDarkMode, MdOutlineLightMode } from "react-icons/md";
 
 export default function Darkmode() {
-    const [darkMode,setDarkMode] = useState(false)
-    useEffect(()=>{
+    const [darkMode, setDarkMode] = useState(() => {
+    return localStorage.getItem('darkMode') === 'true';
+  });
 
-       const storedMode = localStorage.getItem('darkMode')
-       if (storedMode === 'true'){
-        setDarkMode(true)
-         document.body.classList.add('dark-mode')
-       }
-        
-    },[darkMode])
-
-    
-    function toggleDarkMode() {
-        setDarkMode(!darkMode)
-        document.body.classList.toggle('dark-mode')
-        localStorage.setItem('darkMode',!darkMode )
-
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
     }
+    localStorage.setItem('darkMode', darkMode);
+  }, [darkMode]);
+
+  function toggleDarkMode() {
+    setDarkMode(prev => !prev);
+  }
+
     
 
     

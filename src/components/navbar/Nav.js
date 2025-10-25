@@ -18,7 +18,7 @@ export default function Nav() {
         <>
         <header className="header">
             <div className="container">
-                <a href="#home" className="logo" >PortfoliO</a>
+                <a href="#home" className="logo" >Portfolio</a>
                 <Darkmode/>
                 <button onClick={()=> setShow(!show)} style={{background:"transparent",color:"#fff"}}><MdMenu id="menu-icon" /></button>
                 
