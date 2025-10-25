@@ -74,7 +74,7 @@
 .dark-button{
     padding: 3px 4px;
     background-color: transparent;
-    position: absolute;
+    position: fixed;
     top: 14px;
     right: 80px;
     display: none;
