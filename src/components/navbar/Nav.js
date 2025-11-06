@@ -25,23 +25,23 @@ export default function Nav() {
                 
                 <nav className={show?"navbar":"navbar2"}>
                     
-                    <li>
+                    <li onClick={()=> setShow(false)}>
                         {show?<FaHome className="home-icon"/>:""}
                         <a className={activeNav === '#'?'active':''} href="#home" onClick={()=>{setActiveNav('#')}}>Home</a>
                     </li>
-                    <li>
+                    <li onClick={()=> setShow(false)}>
                         {show?<BsGooglePlay className="home-icon"/>:""}
                         <a className={activeNav === '#about'?'active':''} href="#skill" onClick={()=>{setActiveNav('#about')}}>Skills</a>
                     </li>
-                    <li>
+                    <li onClick={()=> setShow(false)}>
                         {show?<FaServicestack className="home-icon"/>:""}
                         <a className={activeNav === '#service'?'active':''} href="#service" onClick={()=>{setActiveNav('#service')}}>Services</a>
                     </li>
-                    <li>
+                    <li onClick={()=> setShow(false)}>
                         {show?<GrProjects className="home-icon"/>:""}
                         <a className={activeNav === '#project'?'active':''} href="#project" onClick={()=>{setActiveNav('#project')}}>Projects</a>
                     </li>
-                    <li>
+                    <li onClick={()=> setShow(false)}>
                         {show?<RiContactsFill className="home-icon"/>:""}
                         <a className={activeNav === '#contact'?'active':''} href="#contact" onClick={()=>{setActiveNav('#contact')}}>Contact</a>
                     </li>
