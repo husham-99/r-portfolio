@@ -22,9 +22,10 @@
 
 .container-skill{
     display:flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
+    gap: 10px;
     
     
     
@@ -67,6 +68,17 @@
     .container-skill .card-skill{
         width: 49%
     }
+
+    .container-skill{
+    
+    justify-content: space-between;
+    gap:0
+    
+    
+    
+    
+    
+}
 
     .container-skill .card-skill .icon{
     width: 50px;

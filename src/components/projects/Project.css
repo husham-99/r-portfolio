@@ -31,6 +31,16 @@
 .project .portfolio-item-img{
     border-radius: 10px;
     overflow: hidden;
+    height: 250px !important;
+    width: 100% !important;
+}
+
+.project .portfolio-item-img img{
+
+    height: 100% !important;
+    width: 100% !important;
+    object-fit:fill
+
 }
 
 .project .portfolio-item h3{

@@ -1,4 +1,4 @@
-
+import { useEffect } from 'react';
 import './Contact.css'
 import Modal from './Modal'
 import { FiDownload, FiLinkedin } from "react-icons/fi";
@@ -14,7 +14,7 @@ import 'animate.css/animate.min.css'
 export default function Contact() {
     const [inputs,setInputs] = useState({name:"",email:"",subject:"",message:""});
     const [showModal,setShowModal] = useState(false)
-    const [animation,SetAnimation] = useState('animate__fadeInUp animate__slow')
+    // const [animation,SetAnimation] = useState('animate__fadeInUp animate__slow')
     const [errorMessage,SetErrorMessage] = useState(null)
     
 
@@ -56,6 +56,33 @@ export default function Contact() {
       .sendForm('service_m99dzkw', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY',)
       e.target.reset()
     };
+
+    useEffect(() =>{
+            
+                
+        const contactContent = document.querySelector('.contact-content');
+        const contactForm = document.querySelector('.contact-form');
+            
+        function isINView(element) {
+        const rect = element.getBoundingClientRect();
+        return rect.bottom > 0 && rect.top < window.innerHeight - 100;
+        }
+            
+        function handleScroll() {
+            
+                if (isINView(contactContent)) {
+                    contactContent.classList.add("visible");
+                    contactForm.classList.add("visible");
+                }
+            
+        }
+        
+
+        window.addEventListener("scroll", handleScroll);
+        handleScroll(); // لتشغيل الأنيميشن عند التحميل
+            
+        return () => window.removeEventListener("scroll", handleScroll);
+    },[])
     return(
         <>
         <section className="contact" id="contact">
@@ -65,7 +92,7 @@ export default function Contact() {
                 <h2>Get In Touch</h2>
             </div>
             <div className="container contact-container">
-                <div className={ `contact-content animate__animated ${animation}`}>
+                <div className='contact-content'>
                     <p className="text-light first">Im always interested in hearing about new projects and opportunities. Whatever you're looking
                         for a developer, have aquestion or just want to connect, feel free to reach out  
                     </p>
@@ -91,7 +118,7 @@ export default function Contact() {
                         </div>
                     </div>
                 </div>
-                <div className={ `contact-form animate__animated ${animation}`} onClick={handleDivClick}>
+                <div className='contact-form' onClick={handleDivClick}>
                     <h3>Get in touch</h3>
                         <input placeholder="Your Full Name *" value={inputs.name} onChange={((e)=>{setInputs({...inputs,name:e.target.value})})}/>
                         <input placeholder="Your Email *" value={inputs.email} onChange={((e)=>{setInputs({...inputs,email:e.target.value})})}/>

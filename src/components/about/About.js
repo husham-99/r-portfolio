@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import {useEffect} from 'react'
 import './About.css'
 import css from '../../assets/css3.svg'
 import express from '../../assets/expressjs.svg'
@@ -18,7 +18,7 @@ import github from '../../assets/github.svg'
 import git from '../../assets/git.svg'
 import typescript from '../../assets/typescript.png'
 import postman from '../../assets/postman.png'
-import 'animate.css/animate.min.css'
+
 
 const skillsData = [
     {
@@ -132,7 +132,28 @@ const skillsData = [
 ]
 export default function About() {
     
-    const [animation,SetAnimation] = useState('animate__fadeInUp animate__slow')
+    useEffect(() =>{
+        
+            
+                const containerSkill = document.querySelectorAll('.container-skill .card-skill');
+        
+                function isINView(element) {
+                const rect = element.getBoundingClientRect();
+                return rect.bottom > 0 && rect.top < window.innerHeight - 100;
+                }
+        
+                function handleScroll() {
+                containerSkill.forEach((card) => {
+                    if (isINView(card)) {
+                    card.classList.add("visible");
+                    }
+                });
+                }
+                window.addEventListener("scroll", handleScroll);
+                handleScroll(); // لتشغيل الأنيميشن عند التحميل
+        
+                return () => window.removeEventListener("scroll", handleScroll);
+            },[])
     return (
         <section className='skill' id='skill'>
             <div className='top-section'>
@@ -142,7 +163,7 @@ export default function About() {
 
             <div className='container container-skill'>
                 {skillsData.map(({ id, img, title, desc }) => (
-                    <article  key={id} className={ `card-skill animate__animated ${animation}`}> 
+                    <article  key={id} className='card-skill'> 
                         <div className='icon'>
                             <img src={img} alt='pic' />
                         </div>

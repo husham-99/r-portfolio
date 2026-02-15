@@ -1,12 +1,33 @@
-import React,{useState} from 'react'
+import { useEffect } from "react";
 import './Service.css'
 import { SiCssdesignawards } from "react-icons/si"
 import { GoRocket } from "react-icons/go";
 import { FaCode } from "react-icons/fa6";
-import 'animate.css/animate.min.css'
+
 
 export default function Service() {
-     const [animation,SetAnimation] = useState('animate__fadeInUp animate__slow')
+    useEffect(() =>{
+    
+        
+            const content = document.querySelectorAll('.content .service-box');
+    
+            function isINView(element) {
+            const rect = element.getBoundingClientRect();
+            return rect.bottom > 0 && rect.top < window.innerHeight - 100;
+            }
+    
+            function handleScroll() {
+            content.forEach((card) => {
+                if (isINView(card)) {
+                card.classList.add("visible");
+                }
+            });
+            }
+            window.addEventListener("scroll", handleScroll);
+            handleScroll(); // لتشغيل الأنيميشن عند التحميل
+    
+            return () => window.removeEventListener("scroll", handleScroll);
+        },[])
     return (
         <section className="service" id='service'>
 
@@ -16,7 +37,7 @@ export default function Service() {
             </div>
 
             <div className="content container">
-                <div className={ `service-box animate__animated ${animation}`}>
+                <div className='service-box'>
                     <SiCssdesignawards className='icon' style={{color:'orange'}}/>
                     <h3>UI/UX Design</h3>
                     <p className='text-light'>I design responsive and modern user interfaces that provide a smooth user experience across all devices</p>

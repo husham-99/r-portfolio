@@ -112,3 +112,41 @@ img {
     padding-top: 3rem !important;
   }
 }
+
+.service-box{
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.6s ease;
+}
+
+.service-box.visible{
+  opacity: 1;
+  transform: translateY(0px);
+  
+}
+
+
+.portfolio-item {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.6s ease;
+}
+
+.portfolio-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-skill, .contact-content, .contact-form {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.6s ease;
+}
+
+.card-skill.visible,.contact-content.visible, .contact-form.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
