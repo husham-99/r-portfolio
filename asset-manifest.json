@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.css": "/r-portfolio/static/css/main.8ba16bf9.css",
-    "main.js": "/r-portfolio/static/js/main.a4d3247c.js",
+    "main.css": "/r-portfolio/static/css/main.dce4612c.css",
+    "main.js": "/r-portfolio/static/js/main.e3f7a730.js",
     "static/js/453.ed3810f9.chunk.js": "/r-portfolio/static/js/453.ed3810f9.chunk.js",
     "static/media/cv.pdf": "/r-portfolio/static/media/cv.3a630991e41835b62a76.pdf",
-    "static/media/e-commerce1.png": "/r-portfolio/static/media/e-commerce1.77158b4e277031b2ccc4.png",
-    "static/media/minna.jpg": "/r-portfolio/static/media/minna.274f3b80f1181d24bf06.jpg",
-    "static/media/portfolio5.png": "/r-portfolio/static/media/portfolio5.a82ae9a163c1ac5e3a07.png",
-    "static/media/task.jpg": "/r-portfolio/static/media/task.7fc4545e038609138789.jpg",
-    "static/media/portfolio6.jpg": "/r-portfolio/static/media/portfolio6.72d1107e313049cf15a7.jpg",
+    "static/media/memorygame.jpeg": "/r-portfolio/static/media/memorygame.0e5d3d300f244130a5a9.jpeg",
+    "static/media/الفجر الساطع.jpeg": "/r-portfolio/static/media/الفجر الساطع.e42359755d1f24306be1.jpeg",
+    "static/media/digi-store.png": "/r-portfolio/static/media/digi-store.dff957c0d2ea3510cf7c.png",
+    "static/media/electro-mart.png": "/r-portfolio/static/media/electro-mart.96031fb5d27423943a86.png",
+    "static/media/silver-design.jpeg": "/r-portfolio/static/media/silver-design.831d7f21a25c02968404.jpeg",
+    "static/media/tasks.jpeg": "/r-portfolio/static/media/tasks.2d8d5317f7268d3c4789.jpeg",
+    "static/media/hotel-resevation.jpeg": "/r-portfolio/static/media/hotel-resevation.53b6925ad3f1434093a1.jpeg",
+    "static/media/adhan.jpeg": "/r-portfolio/static/media/adhan.7404b661d8782d15ab34.jpeg",
+    "static/media/quis-app.jpeg": "/r-portfolio/static/media/quis-app.8a8fc0eaca28f6ef6986.jpeg",
+    "static/media/weatherhub.jpeg": "/r-portfolio/static/media/weatherhub.f17f053eb00440fee06b.jpeg",
     "static/media/me.jpg": "/r-portfolio/static/media/me.92459e1473fb196e348f.jpg",
     "static/media/nextjs.jpg": "/r-portfolio/static/media/nextjs.7b538f46c1139c420ec3.jpg",
-    "static/media/portfolio4.jpg": "/r-portfolio/static/media/portfolio4.6bf60cbb8fe5f7d7af5d.jpg",
     "static/media/react.svg": "/r-portfolio/static/media/react.773b0515c6eab32646e66c2bbc74f4d3.svg",
     "static/media/css3.svg": "/r-portfolio/static/media/css3.f14b087c30d9f8be331a7191cda9463f.svg",
     "static/media/nodejs.svg": "/r-portfolio/static/media/nodejs.3cab2849d218f35912024b23b1bfd4fa.svg",
@@ -23,12 +27,12 @@
     "static/media/mongodb.svg": "/r-portfolio/static/media/mongodb.d597373bed3a732a566659375425268c.svg",
     "static/media/git.svg": "/r-portfolio/static/media/git.43d387b77657117c0e407816cbf72476.svg",
     "index.html": "/r-portfolio/index.html",
-    "main.8ba16bf9.css.map": "/r-portfolio/static/css/main.8ba16bf9.css.map",
-    "main.a4d3247c.js.map": "/r-portfolio/static/js/main.a4d3247c.js.map",
+    "main.dce4612c.css.map": "/r-portfolio/static/css/main.dce4612c.css.map",
+    "main.e3f7a730.js.map": "/r-portfolio/static/js/main.e3f7a730.js.map",
     "453.ed3810f9.chunk.js.map": "/r-portfolio/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ba16bf9.css",
-    "static/js/main.a4d3247c.js"
+    "static/css/main.dce4612c.css",
+    "static/js/main.e3f7a730.js"
   ]
 }
