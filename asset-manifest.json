@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/r-portfolio/static/css/main.dce4612c.css",
-    "main.js": "/r-portfolio/static/js/main.e3f7a730.js",
+    "main.js": "/r-portfolio/static/js/main.b4efd2bf.js",
     "static/js/453.ed3810f9.chunk.js": "/r-portfolio/static/js/453.ed3810f9.chunk.js",
     "static/media/cv.pdf": "/r-portfolio/static/media/cv.3a630991e41835b62a76.pdf",
     "static/media/memorygame.jpeg": "/r-portfolio/static/media/memorygame.0e5d3d300f244130a5a9.jpeg",
@@ -9,9 +9,9 @@
     "static/media/digi-store.png": "/r-portfolio/static/media/digi-store.dff957c0d2ea3510cf7c.png",
     "static/media/electro-mart.png": "/r-portfolio/static/media/electro-mart.96031fb5d27423943a86.png",
     "static/media/silver-design.jpeg": "/r-portfolio/static/media/silver-design.831d7f21a25c02968404.jpeg",
-    "static/media/tasks.jpeg": "/r-portfolio/static/media/tasks.2d8d5317f7268d3c4789.jpeg",
     "static/media/hotel-resevation.jpeg": "/r-portfolio/static/media/hotel-resevation.53b6925ad3f1434093a1.jpeg",
     "static/media/adhan.jpeg": "/r-portfolio/static/media/adhan.7404b661d8782d15ab34.jpeg",
+    "static/media/tasks.jpeg": "/r-portfolio/static/media/tasks.645f63b1f1fdd6edb69e.jpeg",
     "static/media/quis-app.jpeg": "/r-portfolio/static/media/quis-app.8a8fc0eaca28f6ef6986.jpeg",
     "static/media/weatherhub.jpeg": "/r-portfolio/static/media/weatherhub.f17f053eb00440fee06b.jpeg",
     "static/media/me.jpg": "/r-portfolio/static/media/me.92459e1473fb196e348f.jpg",
@@ -28,11 +28,11 @@
     "static/media/git.svg": "/r-portfolio/static/media/git.43d387b77657117c0e407816cbf72476.svg",
     "index.html": "/r-portfolio/index.html",
     "main.dce4612c.css.map": "/r-portfolio/static/css/main.dce4612c.css.map",
-    "main.e3f7a730.js.map": "/r-portfolio/static/js/main.e3f7a730.js.map",
+    "main.b4efd2bf.js.map": "/r-portfolio/static/js/main.b4efd2bf.js.map",
     "453.ed3810f9.chunk.js.map": "/r-portfolio/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dce4612c.css",
-    "static/js/main.e3f7a730.js"
+    "static/js/main.b4efd2bf.js"
   ]
 }
